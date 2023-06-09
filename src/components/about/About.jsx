@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
+// import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 export default function About() {
@@ -24,7 +24,7 @@ export default function About() {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ years</small>
+              <small>3 years</small>
             </article>
 
             {/* CARD 2 */}

@@ -19,9 +19,9 @@ export default function Footer() {
         <li>
           <a href="/#experience">Experience</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/#services">Services</a>
-        </li>
+        </li> */}
         <li>
           <a href="/#portfolio">Portfolio</a>
         </li>
@@ -30,10 +30,18 @@ export default function Footer() {
         </li>
       </ul>
       <div className="footer__socials">
-        <a href="https://www.linkedin.com/in/dmitry-ulasau/">
+        <a
+          href="https://www.linkedin.com/in/dmitry-ulasau/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsLinkedin />
         </a>
-        <a href="https://github.com/dmitryulasau">
+        <a
+          href="https://github.com/dmitryulasau"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsGithub />
         </a>
       </div>

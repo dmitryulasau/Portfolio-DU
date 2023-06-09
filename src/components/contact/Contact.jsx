@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { RiMailSendFill } from "react-icons/ri";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  const [messageSent, setMessageSent] = useState(false);
+
+  const showMessage = () => {
+    toast.info("Your message has been sent!");
+  };
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -19,6 +28,7 @@ export default function Contact() {
       )
       .then(
         (result) => {
+          setMessageSent(true);
           console.log(result.text);
         },
         (error) => {
@@ -43,7 +53,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
+              Send Message
             </a>
           </article>
         </div>
@@ -61,9 +71,23 @@ export default function Contact() {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send a Message
+          <button
+            onClick={showMessage}
+            type="submit"
+            className="btn btn-primary"
+            style={{
+              display: "flex",
+              alignContent: "center",
+              gap: "0.4rem",
+              fontWeight: 600,
+            }}
+          >
+            Send Message
+            <span>
+              <RiMailSendFill />
+            </span>
           </button>
+          {messageSent && <ToastContainer position="top-center" />}
         </form>
       </div>
     </section>
