@@ -88,7 +88,7 @@ a:hover {
 }
 
 .btn {
-  width: max-content;
+  width: 10rem;
   display: inline-block;
   color: var(--color-primary);
   padding: 0.75rem 1.2rem;
@@ -96,6 +96,7 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+  text-align: center;
 }
 
 .btn:hover {

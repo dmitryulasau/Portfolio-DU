@@ -29,25 +29,27 @@ export default function About() {
 
             {/* CARD 2 */}
 
-            <article className="about__card">
+            {/* <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
               <small>No clients</small>
-            </article>
+            </article> */}
 
             {/* CARD 3 */}
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ completed projects</small>
+              <small>10+ completed projects</small>
             </article>
           </div>
+          {/* <h2 className="about__header">Hello I'm Dmitry Ulasau</h2> */}
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-            voluptatem, eveniet aspernatur quibusdam quos quia aperiam minus
-            fugiat dolor ad deleniti dicta nemo amet, sunt suscipit id non nisi
-            qui!
+            I'm a Software Developer with a passion for creating innovative and
+            user-friendly applications. With a strong foundation in HTML, CSS,
+            and JavaScript, I have experience working with various technologies
+            such as ReactJS, Node.js, Python, and SQL. My focus is on developing
+            robust backend systems and seamless frontend experiences.
           </p>
           <a href="/#contact" className="btn btn-primary">
             Let's Talk
