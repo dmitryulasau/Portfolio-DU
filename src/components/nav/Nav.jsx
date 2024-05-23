@@ -3,7 +3,6 @@ import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
 import { TbMessage } from "react-icons/tb";
 import { useState } from "react";
 

@@ -14,27 +14,24 @@ export default function Contact() {
     toast.info("Your message has been sent!");
   };
 
-  const form = useRef();
+  const form = useRef(null);
+
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const userId = process.env.REACT_APP_USER_ID;
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_vaiwgv6",
-        "template_7dh2j7k",
-        form.current,
-        "G8OVwMoAPP_dOhnnM"
-      )
-      .then(
-        (result) => {
-          setMessageSent(true);
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, form.current, userId).then(
+      (result) => {
+        setMessageSent(true);
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
     e.target.reset();
   };
 

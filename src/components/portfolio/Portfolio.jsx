@@ -1,5 +1,6 @@
 import React from "react";
 import "./portfolio.css";
+import IMG0 from "../../assets/portfolio0.jpg";
 import IMG1 from "../../assets/portfolio1.jpg";
 import IMG2 from "../../assets/portfolio2.jpg";
 import IMG3 from "../../assets/portfolio3.jpg";
@@ -10,6 +11,13 @@ import IMG7 from "../../assets/portfolio7.jpg";
 import IMG8 from "../../assets/portfolio8.jpg";
 
 const data = [
+  {
+    id: 1,
+    image: IMG0,
+    title: "GOMED",
+    github: "https://gomed.cz/",
+    demo: "https://gomed.cz/",
+  },
   {
     id: 1,
     image: IMG2,
